@@ -45,4 +45,4 @@ end
 # gem 'debugger', group: [:development, :test]
 gem 'annotate'
 gem 'pry'
-gem "rails-backbone"
+gem 'backbone-on-rails', '~> 1.1.1.0'

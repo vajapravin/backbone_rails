@@ -1,5 +1,8 @@
 GrumblrApp::Application.routes.draw do
-  root "grumbles#index"
+  root "home#index"
+  scope :api do
+    resources :grumbles
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

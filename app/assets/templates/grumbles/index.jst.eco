@@ -1,0 +1,16 @@
+<h1>Grumbles</h1>
+
+<% for grumble in @grumbles.models: %>
+	<div class="author_avatar_div">
+		<h2><%= grumble.get('author') %></h2><br>
+		<div class="col-sm-12">
+			<img src="<%= grumble.get('image') %>" class="pull-left">
+			<img src="<%= grumble.get('avatar') %>" class="pull-right">
+		</div>
+	</div>
+	<div class="title_div">
+		<strong><%= grumble.get('title') %></strong><br>
+		<%= grumble.get('content') %><br>
+		<a href='#' class='deleteGrumble' data-grumble-id='<%= grumble.id %>'>Delete</a>
+	</div><hr>
+<% end %>
